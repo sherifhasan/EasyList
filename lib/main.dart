@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_course/product_manger.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,14 +11,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Easy List'),
         ),
-        body: Card(
-          child: Column(
-            children: <Widget>[
-              Image.asset('assets/food.jpg'),
-              Text('Food Paradise'),
-            ],
-          ),
-        ),
+        body: ProductManger('Food Tester'),
       ),
     );
   }
