@@ -4,6 +4,7 @@ import 'package:flutter_course/products.dart';
 class ProductManger extends StatefulWidget {
   final String startingProduct;
   ProductManger(this.startingProduct);
+
   @override
   State<StatefulWidget> createState() {
     return _ProductManger();
@@ -27,6 +28,8 @@ class _ProductManger extends State<ProductManger> {
           margin: EdgeInsets.all(10.0),
           child: RaisedButton(
             child: Text('Add Product'),
+            textColor: Colors.white,
+            color: Theme.of(context).primaryColor,
             onPressed: () {
               setState(() {
                 _products.add('Advanced Food Tester');
