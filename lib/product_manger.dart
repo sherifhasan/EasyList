@@ -3,7 +3,7 @@ import 'package:flutter_course/products.dart';
 
 class ProductManger extends StatefulWidget {
   final String startingProduct;
-  ProductManger(this.startingProduct);
+  ProductManger({this.startingProduct = 'Sweets tester'});
 
   @override
   State<StatefulWidget> createState() {
@@ -37,7 +37,7 @@ class _ProductManger extends State<ProductManger> {
             },
           ),
         ),
-        Products(_products),
+        Products(products: _products),
       ],
     );
   }
